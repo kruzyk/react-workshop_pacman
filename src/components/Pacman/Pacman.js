@@ -41,7 +41,7 @@ class Pacman extends Component {
             this.setState({
                 direction: 'up',
                 position: {
-                    top: currentTop - step,
+                    top: currentTop === 0 ? 0 : currentTop - step,
                     left: currentLeft
                 }
             });
@@ -58,7 +58,7 @@ class Pacman extends Component {
                 direction: 'left',
                 position: {
                     top: currentTop,
-                    left: currentLeft - step
+                    left: currentLeft === 0 ? 0 : currentLeft - step
                 }
             });
         } else if (event.key === "ArrowRight") {

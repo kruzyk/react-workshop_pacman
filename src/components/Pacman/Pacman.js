@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { ReactComponent as PacmanSvg } from './pacman.svg';
 
 import './style.css';
 
-// import { ReactComponent as PacmanSvg } from './pacman.svg';
 
 class Pacman extends Component {
 
@@ -17,8 +17,7 @@ class Pacman extends Component {
     render() {
         return (
             <div className="pacman" style={this.state.position}>
-                Oo
-                {/* {PacmanSvg} */}
+                <PacmanSvg />
             </div>
         )
     }

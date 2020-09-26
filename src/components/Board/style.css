@@ -1,0 +1,7 @@
+.board {
+    position: relative;
+    background-color: yellow;
+    border: 10px #9e2b2b solid;
+    height: calc(100vh - 100px);
+    width: calc(100vw - 20px);
+}
